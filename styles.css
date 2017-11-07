@@ -19,7 +19,7 @@ footer {
 }
 /* Navigation Main styles */
 nav {
-	background-color: #AA898A;
+	background-color: #DB3232;
 }
 /* Removing margin, padding and listy styles from nav ul */
 nav ul {
@@ -40,15 +40,53 @@ nav a {
 nav a:hover {
 	background-color: #212121;
 }
+/* drowdown menu styles */
+nav ul ul {
+	display: none;
+	position: absolute;
+}
+/* display dropdowns on hover */
+nav ul li:hover > ul {
+	display: inherit;
+	background-color: #DB3232;
+	width: 150px;
+}
+nav ul ul li {
+	display: block;
+}
+.myStyle {
+	display: block;
+}
+button {
+	display: none;
+}
+
 /* Responsive Styles with CSS media query */
 @media all and (max-width : 768px) {
-
+button {
+	display: block;
+}
+nav {
+	display: none;
+	}
 h1 {
 	font-size: smaller;
-	margin-top: 0px;
+	margin-top: 10px;
+	text-align: center;
 }
 footer {
-		display: none;
+	display: none;
+}
+nav ul li {
+	text-align: center;
+	width: 100%;
+	border-bottom: 1px solid white;
+}
+/* responsive dropdown styles */
+nav ul li:hover > ul {
+	position: static;
+	background-color: cadetblue;
+	width: 100%;
 }
 /* end media query */
 }

@@ -42,5 +42,13 @@ nav a:hover {
 }
 /* Responsive Styles with CSS media query */
 @media all and (max-width : 768px) {
-	
+
+h1 {
+	font-size: smaller;
+	margin-top: 0px;
+}
+footer {
+		display: none;
+}
+/* end media query */
 }
